@@ -20,9 +20,10 @@
 .calculator {
     width: calc(50% - 5%);
     max-width: 600px;
-    margin-right: 5%; /* Adjust margin from left */
-    /* margin-top: 10%; Remove margin-top */
+    margin-right: 5%;
+    margin-left: 5%; /* Adjust margin from left */
 }
+
 
 .calculator h1 {
     font-size: 60px;
@@ -99,4 +100,8 @@ cursor: pointer;
     font-size: 100px; /* Adjust the font size as needed */
     margin-top: 10px; /* Adjust the margin to position it below the text */
     /* display: block; Make it a block element to ensure it's on a new line */
+}
+#image{
+    height: 350px;
+    width: 350px;
 }
