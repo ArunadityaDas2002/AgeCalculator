@@ -18,6 +18,9 @@
             </div>
             <p id="result"></p>
         </div>
+        <div id="img" style="display: block;">
+            <img src="https://i.pinimg.com/originals/86/ed/34/86ed34a40389784f2375e25c45b8c366.jpg" id="image"> <!-- Add an id to the image tag -->
+        </div>
         <div class="milli">
             <p id="milli"></p>
             <span id="emoji" style="display: none;">&#128512;</span> <!-- Add the happy face emoji here -->
@@ -31,6 +34,7 @@
     let result = document.getElementById("result");
     let milli = document.getElementById("milli");
     let emoji = document.getElementById("emoji");
+    let image = document.getElementById("image");
 
     function milli_life(){
         let birth_date = new Date(userInput.value);
@@ -39,6 +43,7 @@
         let secs = Math.floor(millisecs / 1000);
 
         milli.innerHTML = `Yeah! you have successfully lived <span>${secs}</span> seconds of life` ;
+        image.style.display = "none";
         emoji.style.display = "inline";
     }
 
